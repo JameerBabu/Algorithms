@@ -1,3 +1,6 @@
+
+// rotate(s.begin() + l, s.begin() + k, s.begin() + r); - rotate string[l-- r] .. k times.
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
