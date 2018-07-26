@@ -1,0 +1,5 @@
+I know the following hack for calculating A*B mod M. 
+Let's calculate res=A*B in long long, forget about overflow.
+Then we calculate tmp=round(A*B/M) in long double and subtract tmp*M from res.
+If long double doesn't give a huge error (it doesn't, but double does), 
+we just got read from overflowing (because all we need is error in tmp less than 9). So, return res % M;
